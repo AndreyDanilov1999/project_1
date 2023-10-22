@@ -1,0 +1,31 @@
+{
+  "name": "project_1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test_git": "npx eslint ./src",
+    "start-server": "json-server database.json -w",
+    "serve": "webpack serve --open --config webpack.config.js",
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "serve-prod": "webpack serve --open --config webpack.prod.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "html-webpack-plugin": "^5.5.3",
+    "husky": "^8.0.3",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  },
+  "dependencies": {
+    "eslint": "^8.52.0",
+    "eslint-webpack-plugin": "^4.0.1",
+    "json-server": "^0.17.4"
+  }
+}
